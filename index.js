@@ -1,4 +1,4 @@
-const { fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes,nextISSTimesForMyLocation } = require('./iss');
+const {nextISSTimesForMyLocation } = require('./iss');
 
 const printPassTimes = (passTimes) => {
 
@@ -10,7 +10,7 @@ const printPassTimes = (passTimes) => {
   }
 };
 
-module.exports = { printPassTimes };
+
 
 
 nextISSTimesForMyLocation( (error, passTimes) => {
@@ -53,3 +53,5 @@ nextISSTimesForMyLocation( (error, passTimes) => {
 
  console.log('It worked! Returned IP:' , ip);
 }); */
+module.exports = { printPassTimes };
+
